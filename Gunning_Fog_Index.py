@@ -1,6 +1,6 @@
 #https://en.wikipedia.org/wiki/Gunning_fog_index
 
-while(a):
+while(ponovniUnos):
 	unetTekst = input("Unesi tekst\n")
 
 	listaReci = unetTekst.split() #Lista koja sadrzi broj reci podeljenih
@@ -26,5 +26,5 @@ while(a):
 	elif(opet == "n"):
 		print("Doviđenja")
 		input("Pritisni bilo koje dugme za kraj.")
-		a = False
+		ponovniUnos = False
 	
