@@ -1,6 +1,7 @@
 #https://en.wikipedia.org/wiki/Gunning_fog_index
 
 while(ponovniUnos):
+	
 	unetTekst = input("Unesi tekst\n")
 
 	listaReci = unetTekst.split() #Lista koja sadrzi broj reci podeljenih
@@ -20,11 +21,13 @@ while(ponovniUnos):
 
 	opet = input("Da li želiš da uneses nov tekst? y/n\n").lower()
 
-	if(opet == "y"):
-		print("Idemo opet")
-
-	elif(opet == "n"):
+	if(opet == "y" or "yes" or "da"): #Ako korisnik unese 'y', ponovi petlju
+	
+	elif(opet == "n" or "no" or "ne"): #Ako korisnik unese 'n', ponovi petlju
 		print("Doviđenja")
 		input("Pritisni bilo koje dugme za kraj.")
 		ponovniUnos = False
+
+	else: #Ako korisnik ne izabere nista, ponovi petlju
+
 	
