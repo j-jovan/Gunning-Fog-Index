@@ -1,17 +1,17 @@
 #https://en.wikipedia.org/wiki/Gunning_fog_index
 from time import sleep
 
-while():
+while(True):
 	
 	unetTekst = input("Unesi tekst\n")
 
 	listaReci = unetTekst.split() #Lista koja sadrzi broj reci podeljenih
 
 	brojReci = len(listaReci)
-	brojRecenica = len(unetTekst.split("."))-1
+	brojRecenica = len(unetTekst.split("."))-1 + len(unetTekst.split("!"))-1 + len(unetTekst.split("?"))-1 + len(unetTekst.split("..."))-1
 	brojKompleksnihReci = 1 #Kompleksna rec je rec koja ima 3 ili vise vokala
 
-	if(brojRecenica == 0): #Privremeni fix
+	if(brojRecenica < 0): #Privremeni fix. 
 		print("Sistem ne prepoznaje nijednu recenicu.")
 		break
 
@@ -28,9 +28,9 @@ while():
 
 	if(opet == "y" or "yes" or "da"): #Ako korisnik unese 'y', ponovi petlju
 		print("")
-	if(opet == "n" or "no" or "ne"): #Ako korisnik unese 'n', ponovi petlju
+	
+	if(opet == "n" or "no" or "ne"): #Ako korisnik unese 'n', izadji iz petlje
 		print("Doviđenja")
-		sleep(10)
 		break
 
 	else: #Ako korisnik ne izabere nista, ponovi petlju
