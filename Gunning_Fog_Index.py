@@ -1,4 +1,7 @@
 #https://en.wikipedia.org/wiki/Gunning_fog_index
+#Skripta ne moze da se kompajluje iz nepoznatog razloga.
+#Potrebno dodati specificne reci iz srpskog jezika u formulu
+#Potrebno dodati rezultate testa, poput 'Osnovna skola', 'Srednja skola'
 from time import sleep
 
 while(True):
